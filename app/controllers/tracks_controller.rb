@@ -22,8 +22,17 @@ class TracksController < ApplicationController
     redirect_to "/tracks/#{params[:id]}"
   end
   
-  def create
+  def confirm_delete
+    @track = Track.find(params[:id])
+  end
+  
+  def delete
+    Track.find(params[:id]).destroy
     
+    redirect_to controller: "tracks", action: "index"
+  end
+  
+  def create  
   end
   
   def save

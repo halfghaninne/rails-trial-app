@@ -12,6 +12,10 @@ RailsTrialApp::Application.routes.draw do
   
   get "tracks/:id/update" => "tracks#update"
   
+  get "tracks/:id/delete" => "tracks#confirm_delete"
+  
+  get "tracks/:id/execute_delete" => "tracks#delete"
+  
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
