@@ -1,4 +1,7 @@
 RailsTrialApp::Application.routes.draw do
+  
+  get "tracks" => "tracks#index"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
