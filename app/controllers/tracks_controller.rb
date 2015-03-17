@@ -14,6 +14,6 @@ class TracksController < ApplicationController
                             url: params[:url]})
     
     
-    redirect_to controller: tracks, action: index
+    redirect_to controller: "tracks", action: "index"
   end
 end
