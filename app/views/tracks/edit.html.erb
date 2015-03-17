@@ -1,0 +1,11 @@
+<h1>Edit Track</h1>
+
+<form action="/tracks/<%= @track.id %>/update" method="get">
+  <label for="name">Name:</label>
+  <input name="name" value="<%= @track.name %>">
+  <label for="artist">Artist:</label>
+  <input name="artist" value="<%= @track.artist %>">
+  <label for="url">URL:</label>
+  <input name="url" value="<%= @track.url %>">
+  <input type="submit">
+</form>

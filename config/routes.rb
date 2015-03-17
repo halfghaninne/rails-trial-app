@@ -8,9 +8,9 @@ RailsTrialApp::Application.routes.draw do
   
   get "tracks/:id" => "tracks#show"
   
+  get "tracks/:id/edit" => "tracks#edit"
   
-  
-  
+  get "tracks/:id/update" => "tracks#update"
   
   
   # The priority is based upon order of creation:
