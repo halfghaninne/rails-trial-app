@@ -2,6 +2,18 @@ RailsTrialApp::Application.routes.draw do
   
   get "tracks" => "tracks#index"
   
+  get "create" => "tracks#create"
+  
+  post "save" => "tracks#save"
+  
+  
+  
+  
+  
+  
+  
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
