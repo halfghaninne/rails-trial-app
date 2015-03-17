@@ -1,5 +1,6 @@
 class TracksController < ApplicationController
+  
   def index
-    @tracks = Tracks.all
+    @tracks = Track.all
   end
 end
