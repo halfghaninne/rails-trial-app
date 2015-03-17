@@ -4,6 +4,11 @@ class TracksController < ApplicationController
     @tracks = Track.all
   end
   
+  def show
+    id = params[:id]
+    @track = Track.find(id)
+  end
+  
   def create
     
   end

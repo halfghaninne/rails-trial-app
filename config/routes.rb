@@ -6,8 +6,7 @@ RailsTrialApp::Application.routes.draw do
   
   post "save" => "tracks#save"
   
-  
-  
+  get "tracks/:id" => "tracks#show"
   
   
   
