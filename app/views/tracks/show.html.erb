@@ -1,8 +1,21 @@
 <h1><%= @track.name %></h1>
 
 <p><b><%= @track.name%></b> - <%= @track.artist%></p>
-<p><a href="#">Play</a></p>
-<p><a href="/tracks/<%= @track.id %>/edit">Edit</a></p>
-<p><a href="/tracks/<%= @track.id %>/delete">Delete</a></p>>
+
+<div>
+  <ul>
+    <li><a href="#">Play</a></li>
+    <li><a href="/tracks/<%= @track.id %>/edit">Edit</a></li>
+    <li><a href="/tracks/<%= @track.id %>/delete">Delete</a></li>
+  </ul>
+</div>
 <br>
-<p><a href="/tracks">Back to index</a></p>
+<br>
+<div>
+  <ul class="nav">
+    <nav>
+    <li><a href="">Back to playlist</a></li>
+    <li><a href="/tracks">Back to index</a></li>
+    </nav>
+  </ul>
+</div>
