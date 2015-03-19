@@ -1,20 +1,20 @@
 RailsTrialApp::Application.routes.draw do
   
-  get "tracks" => "tracks#index", as: "tracks_path"
+  get "tracks" => "tracks#index", as: "tracks"
   
-  get "tracks/new" => "tracks#create", as: "new_track_path"
+  get "tracks/new" => "tracks#create", as: "new_track"
   
-  post "tracks" => "tracks#save", as: "tracks_path"
+  post "tracks" => "tracks#save", as: "tracks"
   
-  get "tracks/:id" => "tracks#show", as: "track_path(:id)"
+  get "tracks/:id" => "tracks#show", as: "track"
   
-  get "tracks/:id/edit" => "tracks#edit"# , as: "edit_track_path(:id)"
+  get "tracks/:id/edit" => "tracks#edit", as: "edit_track"
   
-  put "tracks/:id" => "tracks#update"# , as: "track_path(:id)"
+  put "tracks/:id" => "tracks#update", as: "track"
+
+  # get "tracks/:id/delete" => "tracks#confirm_delete",
   
-  get "tracks/:id/delete" => "tracks#confirm_delete"# , as: "b"
-  
-  delete "tracks/:id" => "tracks#delete"
+  delete "tracks/:id" => "tracks#delete", as: "delete_track"
   
   
   # The priority is based upon order of creation:
