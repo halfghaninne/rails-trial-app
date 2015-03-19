@@ -1,6 +1,16 @@
 <h1>New Track</h1>
 
-<form action="/tracks" method="post">
+<%= form_for @track do |f| %>
+  <%= f.label "name", "Name:" %>
+  <%= f.text_field("name") %><br>
+  <%= f.label "artist", "Artist:" %>
+  <%= f.text_field("artist") %><br>
+  <%= f.label "url", "URL:" %>
+  <%= f.text_field("url") %><br>
+  <%= f.submit %>
+<% end %>
+
+<!-- <form action="/tracks" method="post">
   <label for="name">Name:</label>
   <input name="name">
   <label for="artist">Artist:</label>
@@ -8,4 +18,4 @@
   <label for="url">URL:</label>
   <input name="url">
   <input type="submit">
-</form>
+</form> -->

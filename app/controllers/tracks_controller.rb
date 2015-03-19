@@ -33,7 +33,8 @@ class TracksController < ApplicationController
     redirect_to controller: "tracks", action: "index"
   end
   
-  def create  
+  def create 
+    @track = Track.new 
   end
   
   def save
