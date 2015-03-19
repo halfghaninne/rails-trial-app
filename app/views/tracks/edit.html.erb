@@ -1,6 +1,7 @@
 <h1>Edit Track</h1>
 
-<form action="/tracks/<%= @track.id %>/update" method="get">
+<form action="/tracks/<%= @track.id %>">
+  <input type="hidden" name="_method" value="put">
   <label for="name">Name:</label>
   <input name="name" value="<%= @track.name %>">
   <label for="artist">Artist:</label>

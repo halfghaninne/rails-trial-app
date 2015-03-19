@@ -14,11 +14,12 @@ class TracksController < ApplicationController
   end
   
   def update
+    
     Track.update(params[:id], 
                 :name => params[:name], 
                 :artist => params[:artist], 
                 :url => params[:url])
-    
+
     redirect_to "/tracks/#{params[:id]}"
   end
   

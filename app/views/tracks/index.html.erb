@@ -1,5 +1,8 @@
 <h1>Playlist</h1>
 
 <% @tracks.each do |track| %>
-  <p><a href="/tracks/<%= track.id %>"><b><%= track.name%></b> - <%= track.artist%></a></p>
+<p> <%= link_to(track.name, track_path(track.id))%> </p>
+
+
+  <!-- <p><a href="/tracks/<%= track.id %>"><b><%= track.name%></b> - <%= track.artist%></a></p> -->
 <% end %>

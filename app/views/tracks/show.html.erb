@@ -6,7 +6,7 @@
   <ul>
     <li><a href="#">Play</a></li>
     <li><a href="/tracks/<%= @track.id %>/edit">Edit</a></li>
-    <li><a href="/tracks/<%= @track.id %>/delete">Delete</a></li>
+    <li><a href="/tracks/<%= @track.id %>" method ="delete" onclick="alert('Are you sure you want to delete <%= @track.name %>?')">Delete</a></li>
   </ul>
 </div>
 <br>
@@ -18,4 +18,4 @@
     <li><a href="/tracks">Back to index</a></li>
     </nav>
   </ul>
-</div>
+</div>oa
