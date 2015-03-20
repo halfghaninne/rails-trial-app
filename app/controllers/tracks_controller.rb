@@ -35,10 +35,7 @@ class TracksController < ApplicationController
   
   def create
     newTrack = Track.create(params[:track])
-    # newTrack = Track.create({name: params[:name],
-    #                         artist: params[:artist],
-    #                         url: params[:url]})
-    
+
     
     redirect_to controller: "tracks", action: "index"
   end
