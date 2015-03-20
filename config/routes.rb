@@ -11,8 +11,6 @@ RailsTrialApp::Application.routes.draw do
   get "tracks/:id/edit" => "tracks#edit", as: "edit_track"
   
   put "tracks/:id" => "tracks#update"
-
-  # get "tracks/:id/delete" => "tracks#confirm_delete",
   
   delete "tracks/:id" => "tracks#delete"
   
