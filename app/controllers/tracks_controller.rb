@@ -7,6 +7,7 @@ class TracksController < ApplicationController
   def show
     id = params[:id]
     @track = Track.find(id)
+    @spotify_string = "https://embed.spotify.com/?uri=spotify%3Atrack%3A" + @track.link
   end
   
   def edit

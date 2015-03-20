@@ -2,10 +2,9 @@
 
 <p><b><%= @track.name%></b> - <%= @track.artist%></p>
 
-<!-- <div>
-  "<iframe src='https://embed.spotify.com/?uri=spotify%3Atrack%3A" + @track.link + "' width='300' height='380' frameborder='0' allowtransparency='true'></iframe>'"
-
-</div> -->
+<div>
+  <iframe src='<%= @spotify_string %>' width='300' height='380' frameborder='0' allowtransparency='true'></iframe>
+</div>
 
 <div>
   <ul>
