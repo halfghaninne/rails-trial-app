@@ -15,6 +15,17 @@ RailsTrialApp::Application.routes.draw do
   delete "tracks/:id" => "tracks#delete"
   
   
+  get "playlists" => "playlists/index", as: "playlists"
+  
+  get "playlists/new" => "playlists#new", as: "new_playlist"
+  
+  post "playlists" => "playlists#create"
+  
+  get "playlists/:id" => "playlists#show", as: "playlist"
+  
+  delete "playlists/:id" => "playlists#delete"
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
