@@ -7,7 +7,7 @@
     <li><a href="#">Play</a></li>
     <li><%= link_to("Edit", edit_track_path(@track.id))%></li>
     <!-- <li><a href="/tracks/<%= @track.id %>/edit">Edit</a></li> -->
-    <li><%= link_to("Delete", delete_track_path(@track.id), confirm: "Are you sure you want to delete?")%></li>
+    <li><%= link_to("Delete", track_path(@track.id), method: :delete, confirm: "Are you sure you want to delete?")%></li>
     <!-- <li><a href="/tracks/<%= @track.id %>" method ="delete" onclick="alert('Are you sure you want to delete <%= @track.name %>?')">Delete</a></li> -->
   </ul>
 </div>

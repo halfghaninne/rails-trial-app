@@ -14,11 +14,7 @@ class TracksController < ApplicationController
   end
   
   def update
-    
-    Track.update(params[:id], 
-                :name => params[:name], 
-                :artist => params[:artist], 
-                :url => params[:url])
+    Track.update(params[:id], params[:track])
 
     redirect_to "/tracks/#{params[:id]}"
   end
@@ -33,14 +29,15 @@ class TracksController < ApplicationController
     redirect_to controller: "tracks", action: "index"
   end
   
-  def create 
+  def new 
     @track = Track.new 
   end
   
-  def save
-    newTrack = Track.create({name: params[:name], 
-                            artist: params[:artist], 
-                            url: params[:url]})
+  def create
+    newTrack = Track.create(params[:track])
+    # newTrack = Track.create({name: params[:name],
+    #                         artist: params[:artist],
+    #                         url: params[:url]})
     
     
     redirect_to controller: "tracks", action: "index"
