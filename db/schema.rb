@@ -11,12 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150317163403) do
+ActiveRecord::Schema.define(:version => 20150320162354) do
 
   create_table "tracks", :force => true do |t|
     t.string "name"
     t.string "artist"
-    t.text   "url"
+    t.text   "link"
   end
 
 end
